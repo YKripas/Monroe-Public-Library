@@ -65,8 +65,10 @@
                <td><script type="text/javascript">
                    var userName = "cadler";
                    var emServer= "mpl.gov";
-                   document.write("<a href='mailto:cadler@mpl.gov'>");
-                   document.write("cadler@mpl.gov");
+                   var emLink = userName + "@" + emServer;
+                   
+                   document.write("<a href='mailto:" + emLink + "'>");
+                   document.write(emLink);
                    document.write("</a>");
                    </script>
                </td>
