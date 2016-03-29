@@ -22,6 +22,14 @@
       <script src="modernizr-1.5.js"></script>
 
       <link href="mplstyles.css" rel="stylesheet" />
+       <script type="text/javascript">
+            function showEM(userName, emServer) {
+                var emLink=userName + "@" + emServer;
+                document.write("<a href='mailto:" + emLink + "'>");
+                document.write(emLink);
+                document.write("</a>");
+            }
+       </script>
 
    </head>
 
@@ -63,9 +71,13 @@
                <td>Catherine Adler<br />Library Director</td>
                <td>555-3100</td>
                <td><script type="text/javascript">
-                   var userName = "cadler";
+                   /*SEPARATING EMAIL STRING INTO TWO VARIABLES*/
+                   /*IN ORDER TO MURDER SPAM LOL*/
+                   var userName = "cadler"; 
                    var emServer= "mpl.gov";
+                   /*COMBINING VARIABLES INTO FULL EMAIL ADDRESS*/
                    var emLink = userName + "@" + emServer;
+                   
                    
                    document.write("<a href='mailto:" + emLink + "'>");
                    document.write(emLink);
